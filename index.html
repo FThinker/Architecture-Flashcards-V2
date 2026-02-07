@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flashcards - Storia dell'Architettura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+</head>
+<body>
+
+    <header onclick="goHome()">
+        <h1>Flashcards</h1>
+        <p>Storia dell'Architettura Antica e Medievale</p>
+    </header>
+
+    <main>
+        <div id="selection-view" class="container view-container">
+            <div class="selection-header">
+                <h2>Scegli una categoria</h2>
+            </div>
+            
+            <div id="category-grid" class="grid scrollable-grid">
+                </div>
+        </div>
+
+        <div id="flashcard-view" class="container view-container hidden">
+            <div class="controls-top">
+                <button id="btn-back-home" class="icon-btn">← Home</button>
+                <div class="progress-wrapper">
+                    <span id="counter">1 / 10</span>
+                    <div class="progress-bar-bg">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+                <button id="btn-toggle-fav" class="icon-btn fav-btn">
+                    <span id="fav-icon">♡</span>
+                </button>
+            </div>
+
+            <div class="card-area">
+                <div class="card-container">
+                    <div class="flashcard" id="flashcard">
+                        <div class="front">
+                            <div class="image-container">
+                                <img id="card-image" src="" alt="Building Plan" draggable="false">
+                            </div>
+                            <div class="hint-container">
+                                <div class="hint-text">Premi per girare • Scorri per andare avanti</div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="content">
+                                <span class="label">Edificio:</span>
+                                <h2 id="card-title">Nome Edificio</h2>
+                                <span class="label category-label" id="card-category">Categoria</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls-bottom">
+                <button id="btn-prev" class="nav-btn">Precedente</button>
+                <button id="btn-next" class="nav-btn primary">Successivo</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Rather be a smart fella than a fart smella</p>
+    </footer>
+
+    <div id="global-tooltip" class="global-tooltip"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

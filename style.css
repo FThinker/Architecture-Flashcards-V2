@@ -1,0 +1,368 @@
+:root {
+    --bg-color: #121212;
+    --surface-color: #1e1e1e;
+    --surface-hover: #2c2c2c;
+    --primary-color: #bb86fc;
+    --primary-variant: #3700b3;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --success-color: #03dac6;
+    --error-color: #cf6679;
+    --card-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    --transition: 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* --- RESET & BASIC SETUP --- */
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* No scroll on body */
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* --- HEADER --- */
+header {
+    text-align: center;
+    padding: 1rem;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    width: 100%;
+}
+
+header:hover { opacity: 0.8; }
+header h1 { margin: 0; font-size: 1.5rem; color: var(--primary-color); }
+header p { color: var(--text-secondary); font-size: 0.8rem; margin: 0.2rem 0 0 0; }
+
+/* --- MAIN LAYOUT --- */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container { padding: 0 1rem; width: 100%; }
+.view-container { height: 100%; display: flex; flex-direction: column; }
+.hidden { display: none !important; }
+
+/* --- SELECTION VIEW (HOME) --- */
+.selection-header { margin-bottom: 0.5rem; flex-shrink: 0; }
+
+.scrollable-grid {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    padding: 1rem 4px 2rem 4px; /* Extra padding to prevent hover cut-off */
+    scrollbar-width: thin;
+    scrollbar-color: var(--surface-hover) var(--bg-color);
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+.category-card {
+    background-color: var(--surface-color);
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    position: relative;
+}
+
+.category-card:hover:not(.disabled) {
+    transform: translateY(-4px) scale(1.01); 
+    border-color: var(--primary-color);
+    background-color: var(--surface-hover);
+    z-index: 10;
+}
+
+.category-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-card p { margin: 0; color: var(--text-secondary); font-size: 0.9rem; }
+.all-card { border-left: 4px solid var(--primary-color); }
+.fav-card { border-left: 4px solid var(--error-color); }
+
+.category-card.disabled {
+    opacity: 0.5;
+    cursor: default;
+    border-color: #222;
+}
+
+/* --- TOOLTIP (Trigger & Pop-up) --- */
+.tooltip-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #444;
+    color: white;
+    font-size: 12px;
+    cursor: help;
+    margin-left: 8px;
+    border: 1px solid #555;
+}
+
+.global-tooltip {
+    position: fixed;
+    background-color: #252525;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    max-width: 220px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+    border: 1px solid #444;
+    pointer-events: none; /* Mouse passes through */
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, transform 0.2s;
+    transform: translateY(5px);
+}
+
+.global-tooltip.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* --- FLASHCARD VIEW --- */
+.controls-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    flex-shrink: 0;
+    height: 40px;
+}
+
+.progress-wrapper {
+    flex: 1;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+#counter {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.progress-bar-bg {
+    width: 100%;
+    height: 6px;
+    background: #333;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #cf6679 0%, #f1c40f 50%, #03dac6 100%); 
+    transition: width 0.3s ease;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    height: 40px;
+}
+
+.icon-btn:hover { color: white; }
+
+.fav-btn {
+    font-size: 1.5rem;
+    color: #555;
+    transition: color 0.1s;
+    width: 40px;
+    text-align: center;
+}
+.fav-btn.active { color: var(--error-color); }
+
+/* Card Area */
+.card-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-container {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.flashcard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    cursor: grab;
+    
+    /* CRITICAL FOR MOBILE */
+    touch-action: pan-y; /* Allows vertical page scroll, blocks horizontal */
+    user-select: none;
+}
+
+.flashcard:active { cursor: grabbing; }
+.flashcard.is-flipped { transform: rotateY(180deg); }
+
+/* --- ANIMATIONS --- */
+.swipe-left { animation: swipeLeft 0.25s forwards; }
+.swipe-right { animation: swipeRight 0.25s forwards; }
+.swipe-in { animation: swipeIn 0.2s forwards; }
+
+@keyframes swipeLeft { 
+    0% { transform: translateX(0) rotate(0); opacity: 1; }
+    100% { transform: translateX(-120%) rotate(-10deg); opacity: 0; } 
+}
+@keyframes swipeRight { 
+    0% { transform: translateX(0) rotate(0); opacity: 1; }
+    100% { transform: translateX(120%) rotate(10deg); opacity: 0; } 
+}
+@keyframes swipeIn { 
+    0% { transform: scale(0.95); opacity: 0; } 
+    100% { transform: scale(1); opacity: 1; } 
+}
+
+/* --- CARD FACES --- */
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    background-color: var(--surface-color);
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.image-container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.hint-container {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--surface-color);
+    border-top: 1px solid #333;
+    flex-shrink: 0;
+}
+
+.hint-text { font-size: 0.75rem; color: var(--text-secondary); }
+
+.back {
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.back h2 { color: var(--primary-color); font-size: 1.4rem; margin: 0.5rem 0 1.5rem 0; }
+.label { text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; color: var(--text-secondary); display: block; }
+
+.category-label {
+    background: #333;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* --- FOOTER & CONTROLS --- */
+.controls-bottom {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    flex-shrink: 0;
+}
+
+.nav-btn {
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border: 1px solid #444;
+    background: var(--surface-color);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.1s;
+    min-width: 120px;
+}
+
+.nav-btn.primary { background-color: var(--primary-color); color: black; border: none; }
+.nav-btn:active { transform: scale(0.95); }
+
+footer { text-align: center; padding: 0.5rem; font-size: 0.75rem; color: #444; flex-shrink: 0; }

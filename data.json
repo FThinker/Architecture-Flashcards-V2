@@ -1,0 +1,807 @@
+{
+    "categories": [
+        {
+            "id": "civilt-ellenica",
+            "name": "CIVILTÀ ELLENICA",
+            "buildings": [
+                {
+                    "name": "Heraion di Olympia",
+                    "images": [
+                        "images/heraion-di-olympia-1.png"
+                    ]
+                },
+                {
+                    "name": "Tempio di Apollo a Siracusa",
+                    "images": [
+                        "images/tempio-di-apollo-a-siracusa-1.png",
+                        "images/tempio-di-apollo-a-siracusa-2.png"
+                    ]
+                },
+                {
+                    "name": "\"Basilica\" a Paestum",
+                    "images": [
+                        "images/basilica-a-paestum-1.png"
+                    ]
+                },
+                {
+                    "name": "Tempio G di Selinunte",
+                    "images": [
+                        "images/tempio-g-di-selinunte-1.png"
+                    ]
+                },
+                {
+                    "name": "Tempio di Aphaia a Egina",
+                    "images": [
+                        "images/tempio-di-aphaia-a-egina-1.png"
+                    ]
+                },
+                {
+                    "name": "Tempio di Atena a Paestum",
+                    "images": [
+                        "images/tempio-di-atena-a-paestum-1.png"
+                    ]
+                },
+                {
+                    "name": "Artemis ad Efeso",
+                    "images": [
+                        "images/artemis-ad-efeso-1.png"
+                    ]
+                },
+                {
+                    "name": "Era a Samos",
+                    "images": [
+                        "images/era-a-samos-1.png"
+                    ]
+                },
+                {
+                    "name": "Apollo a Didima",
+                    "images": [
+                        "images/apollo-a-didima-1.png"
+                    ]
+                },
+                {
+                    "name": "Tempio di Zeus a Olympia",
+                    "images": [
+                        "images/tempio-di-zeus-a-olympia-1.png"
+                    ]
+                },
+                {
+                    "name": "Tempio di Poseidone a Paestum",
+                    "images": [
+                        "images/tempio-di-poseidone-a-paestum-1.png"
+                    ]
+                },
+                {
+                    "name": "L’acropoli di Atene: Propilei, Eretteo, Tempio di Atena Nike, Partenone",
+                    "images": [
+                        "images/lacropoli-di-atene-propilei-eretteo-tempio-di-atena-nike-partenone-1.png"
+                    ]
+                },
+                {
+                    "name": "Telesterion di Eleusi",
+                    "images": [
+                        "images/telesterion-di-eleusi-1.png"
+                    ]
+                },
+                {
+                    "name": "Tempio di Apollo Epikoùrios a Bassae",
+                    "images": [
+                        "images/tempio-di-apollo-epikorios-a-bassae-1.png"
+                    ]
+                },
+                {
+                    "name": "Tempio di Zeus a Nemea",
+                    "images": [
+                        "images/tempio-di-zeus-a-nemea-1.png"
+                    ]
+                },
+                {
+                    "name": "Tempio di Atena Alea a Tegèa",
+                    "images": [
+                        "images/tempio-di-atena-alea-a-tega-1.png"
+                    ]
+                },
+                {
+                    "name": "Tholoi a Delfi ed a Epidauro",
+                    "images": [
+                        "images/tholoi-a-delfi-ed-a-epidauro-1.png",
+                        "images/tholoi-a-delfi-ed-a-epidauro-2.png"
+                    ]
+                },
+                {
+                    "name": "Tempio di Atena Poliàs a Priene",
+                    "images": [
+                        "images/tempio-di-atena-polis-a-priene-1.png"
+                    ]
+                },
+                {
+                    "name": "Mausoleo di Alicarnasso",
+                    "images": [
+                        "images/mausoleo-di-alicarnasso-1.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ellenismo",
+            "name": "ELLENISMO",
+            "buildings": [
+                {
+                    "name": "Tempio di Artemis-Leukophriène",
+                    "images": [
+                        "images/tempio-di-artemisleukophrine-1.png"
+                    ]
+                },
+                {
+                    "name": "Altare di Pergamo",
+                    "images": [
+                        "images/altare-di-pergamo-1.png",
+                        "images/altare-di-pergamo-2.png"
+                    ]
+                },
+                {
+                    "name": "Templi area sacra largo argentina",
+                    "images": [
+                        "images/templi-area-sacra-largo-argentina-1.png"
+                    ]
+                },
+                {
+                    "name": "Porticus Aemilia a Roma",
+                    "images": [
+                        "images/porticus-aemilia-a-roma-1.png"
+                    ]
+                },
+                {
+                    "name": "Fortuna Primigenia a Palestrina",
+                    "images": [
+                        "images/fortuna-primigenia-a-palestrina-1.png",
+                        "images/fortuna-primigenia-a-palestrina-2.png"
+                    ]
+                },
+                {
+                    "name": "Santuario di Ercole a Tivoli",
+                    "images": [
+                        "images/santuario-di-ercole-a-tivoli-1.png"
+                    ]
+                },
+                {
+                    "name": "Giove Anxur a Terracina",
+                    "images": [
+                        "images/giove-anxur-a-terracina-1.png",
+                        "images/giove-anxur-a-terracina-2.png"
+                    ]
+                },
+                {
+                    "name": "Tabularium a Roma",
+                    "images": [
+                        "images/tabularium-a-roma-1.png"
+                    ]
+                },
+                {
+                    "name": "Teatro di Pompeo",
+                    "images": [
+                        "images/teatro-di-pompeo-1.png",
+                        "images/teatro-di-pompeo-2.png"
+                    ]
+                },
+                {
+                    "name": "Foro di Cesare",
+                    "images": [
+                        "images/foro-di-cesare-1.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "et-imperiale",
+            "name": "ETÀ IMPERIALE",
+            "buildings": [
+                {
+                    "name": "Teatro di Marcello",
+                    "images": [
+                        "images/teatro-di-marcello-1.png"
+                    ]
+                },
+                {
+                    "name": "Foro di Augusto",
+                    "images": [
+                        "images/foro-di-augusto-1.png"
+                    ]
+                },
+                {
+                    "name": "Domus Aurea",
+                    "images": [
+                        "images/domus-aurea-1.png",
+                        "images/domus-aurea-2.png"
+                    ]
+                },
+                {
+                    "name": "Colosseo",
+                    "images": [
+                        "images/colosseo-1.png"
+                    ]
+                },
+                {
+                    "name": "Foro Transitorio",
+                    "images": [
+                        "images/foro-transitorio-1.png",
+                        "images/foro-transitorio-2.png"
+                    ]
+                },
+                {
+                    "name": "Arco di Tito",
+                    "images": [
+                        "images/arco-di-tito-1.png",
+                        "images/arco-di-tito-2.png"
+                    ]
+                },
+                {
+                    "name": "Pantheon",
+                    "images": [
+                        "images/pantheon-1.png"
+                    ]
+                },
+                {
+                    "name": "Foro di Traiano",
+                    "images": [
+                        "images/foro-di-traiano-1.png"
+                    ]
+                },
+                {
+                    "name": "Mercati di Traiano",
+                    "images": [
+                        "images/mercati-di-traiano-1.png"
+                    ]
+                },
+                {
+                    "name": "Basilica Ulpia (nel foro di traiano)",
+                    "images": [
+                        "images/basilica-ulpia-nel-foro-di-traiano-1.png"
+                    ]
+                },
+                {
+                    "name": "Villa Adriana",
+                    "images": [
+                        "images/villa-adriana-1.png"
+                    ]
+                },
+                {
+                    "name": "Tempio di Venere e Roma",
+                    "images": [
+                        "images/tempio-di-venere-e-roma-1.png"
+                    ]
+                },
+                {
+                    "name": "Foro Severiano a Leptis Magna",
+                    "images": [
+                        "images/foro-severiano-a-leptis-magna-1.png"
+                    ]
+                },
+                {
+                    "name": "Terme di Caracalla",
+                    "images": [
+                        "images/terme-di-caracalla-1.png"
+                    ]
+                },
+                {
+                    "name": "Ninfeo degli Orti Liciniani",
+                    "images": [
+                        "images/ninfeo-degli-orti-liciniani-1.png",
+                        "images/ninfeo-degli-orti-liciniani-2.png"
+                    ]
+                },
+                {
+                    "name": "Terme di Diocleziano",
+                    "images": [
+                        "images/terme-di-diocleziano-1.png"
+                    ]
+                },
+                {
+                    "name": "Palazzo di Diocleziano a Spalato",
+                    "images": [
+                        "images/palazzo-di-diocleziano-a-spalato-1.png",
+                        "images/palazzo-di-diocleziano-a-spalato-2.png"
+                    ]
+                },
+                {
+                    "name": "Basilica Nova",
+                    "images": [
+                        "images/basilica-nova-1.png",
+                        "images/basilica-nova-2.png"
+                    ]
+                },
+                {
+                    "name": "Mausoleo di Costantina (Santa Costanza)",
+                    "images": [
+                        "images/mausoleo-di-costantina-santa-costanza-1.png",
+                        "images/mausoleo-di-costantina-santa-costanza-2.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "architettura-paleocristiana-e-bizantina",
+            "name": "ARCHITETTURA PALEOCRISTIANA E BIZANTINA",
+            "buildings": [
+                {
+                    "name": "Basilica Lateranense",
+                    "images": [
+                        "images/basilica-lateranense-1.png",
+                        "images/basilica-lateranense-2.png"
+                    ]
+                },
+                {
+                    "name": "San Lorenzo Fuori le Mura (attuale)",
+                    "images": [
+                        "images/san-lorenzo-fuori-le-mura-attuale-1.png"
+                    ]
+                },
+                {
+                    "name": "San Pietro in Vaticano",
+                    "images": [
+                        "images/san-pietro-in-vaticano-1.png",
+                        "images/san-pietro-in-vaticano-2.png"
+                    ]
+                },
+                {
+                    "name": "Santa Maria Maggiore",
+                    "images": [
+                        "images/santa-maria-maggiore-1.png"
+                    ]
+                },
+                {
+                    "name": "Battistero Lateranense",
+                    "images": [
+                        "images/battistero-lateranense-1.png",
+                        "images/battistero-lateranense-2.png"
+                    ]
+                },
+                {
+                    "name": "San Lorenzo a Milano",
+                    "images": [
+                        "images/san-lorenzo-a-milano-1.png",
+                        "images/san-lorenzo-a-milano-2.png"
+                    ]
+                },
+                {
+                    "name": "Santo Stefano Rotondo a Roma",
+                    "images": [
+                        "images/santo-stefano-rotondo-a-roma-1.png",
+                        "images/santo-stefano-rotondo-a-roma-2.png"
+                    ]
+                },
+                {
+                    "name": "Battistero degli Ariani",
+                    "images": [
+                        "images/battistero-degli-ariani-1.png"
+                    ]
+                },
+                {
+                    "name": "S. Vitale",
+                    "images": [
+                        "images/s-vitale-1.png"
+                    ]
+                },
+                {
+                    "name": "SS. Sergio e Bacco",
+                    "images": [
+                        "images/ss-sergio-e-bacco-1.png",
+                        "images/ss-sergio-e-bacco-2.png"
+                    ]
+                },
+                {
+                    "name": "S. Sofia",
+                    "images": [
+                        "images/s-sofia-1.png",
+                        "images/s-sofia-2.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "alto-medioevo",
+            "name": "ALTO MEDIOEVO",
+            "buildings": [
+                {
+                    "name": "Cappella Palatina di Aquisgrana",
+                    "images": [
+                        "images/cappella-palatina-di-aquisgrana-1.png",
+                        "images/cappella-palatina-di-aquisgrana-2.png"
+                    ]
+                },
+                {
+                    "name": "Torhalle di Lorsch",
+                    "images": [
+                        "images/torhalle-di-lorsch-1.png"
+                    ]
+                },
+                {
+                    "name": "Pianta abbazia di S. Gallo",
+                    "images": [
+                        "images/pianta-abbazia-di-s-gallo-1.png"
+                    ]
+                },
+                {
+                    "name": "Abbazia di Corvey",
+                    "images": [
+                        "images/abbazia-di-corvey-1.png"
+                    ]
+                },
+                {
+                    "name": "San Michele ad Hildesheim",
+                    "images": [
+                        "images/san-michele-ad-hildesheim-1.png",
+                        "images/san-michele-ad-hildesheim-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Spira",
+                    "images": [
+                        "images/cattedrale-di-spira-1.png",
+                        "images/cattedrale-di-spira-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Worms",
+                    "images": [
+                        "images/cattedrale-di-worms-1.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Magonza",
+                    "images": [
+                        "images/cattedrale-di-magonza-1.png",
+                        "images/cattedrale-di-magonza-2.png"
+                    ]
+                },
+                {
+                    "name": "Cluny II",
+                    "images": [
+                        "images/cluny-ii-1.png",
+                        "images/cluny-ii-2.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "romanico-in-europa",
+            "name": "ROMANICO IN EUROPA",
+            "buildings": [
+                {
+                    "name": "St. Front a Perigueux",
+                    "images": [
+                        "images/st-front-a-perigueux-1.png",
+                        "images/st-front-a-perigueux-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Angouleme",
+                    "images": [
+                        "images/cattedrale-di-angouleme-1.png",
+                        "images/cattedrale-di-angouleme-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Durham",
+                    "images": [
+                        "images/cattedrale-di-durham-1.png"
+                    ]
+                },
+                {
+                    "name": "Santiago de Compostela",
+                    "images": [
+                        "images/santiago-de-compostela-1.png",
+                        "images/santiago-de-compostela-2.png"
+                    ]
+                },
+                {
+                    "name": "Cluny III",
+                    "images": [
+                        "images/cluny-iii-1.png",
+                        "images/cluny-iii-2.png"
+                    ]
+                },
+                {
+                    "name": "S.te Madeleine a Vézelay",
+                    "images": [
+                        "images/ste-madeleine-a-vzelay-1.png"
+                    ]
+                },
+                {
+                    "name": "Monastero di Fontenay",
+                    "images": [
+                        "images/monastero-di-fontenay-1.png"
+                    ]
+                },
+                {
+                    "name": "Monasteri di Fossanova, Casamari",
+                    "images": [
+                        "images/monasteri-di-fossanova-casamari-1.png",
+                        "images/monasteri-di-fossanova-casamari-2.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "romanico-in-italia",
+            "name": "ROMANICO IN ITALIA",
+            "buildings": [
+                {
+                    "name": "S. Abbondio a Como",
+                    "images": [
+                        "images/s-abbondio-a-como-1.png",
+                        "images/s-abbondio-a-como-2.png"
+                    ]
+                },
+                {
+                    "name": "S. Ambrogio a Milano",
+                    "images": [
+                        "images/s-ambrogio-a-milano-1.png"
+                    ]
+                },
+                {
+                    "name": "S. Michele a Pavia",
+                    "images": [
+                        "images/s-michele-a-pavia-1.png",
+                        "images/s-michele-a-pavia-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Parma",
+                    "images": [
+                        "images/cattedrale-di-parma-1.png"
+                    ]
+                },
+                {
+                    "name": "Duomo di Modena",
+                    "images": [
+                        "images/duomo-di-modena-1.png",
+                        "images/duomo-di-modena-2.png"
+                    ]
+                },
+                {
+                    "name": "S. Marco a Venezia",
+                    "images": [
+                        "images/s-marco-a-venezia-1.png",
+                        "images/s-marco-a-venezia-2.png"
+                    ]
+                },
+                {
+                    "name": "Duomo e Campo dei Miracoli a Pisa",
+                    "images": [
+                        "images/duomo-e-campo-dei-miracoli-a-pisa-1.png",
+                        "images/duomo-e-campo-dei-miracoli-a-pisa-2.png"
+                    ]
+                },
+                {
+                    "name": "S. Clemente",
+                    "images": [
+                        "images/s-clemente-1.png",
+                        "images/s-clemente-2.png"
+                    ]
+                },
+                {
+                    "name": "Santi Quattro Coronati",
+                    "images": [
+                        "images/santi-quattro-coronati-1.png",
+                        "images/santi-quattro-coronati-2.png"
+                    ]
+                },
+                {
+                    "name": "Santa Maria in Trastevere",
+                    "images": [
+                        "images/santa-maria-in-trastevere-1.png",
+                        "images/santa-maria-in-trastevere-2.png"
+                    ]
+                },
+                {
+                    "name": "Montecassino",
+                    "images": [
+                        "images/montecassino-1.png",
+                        "images/montecassino-2.png"
+                    ]
+                },
+                {
+                    "name": "S. Nicola di Bari",
+                    "images": [
+                        "images/s-nicola-di-bari-1.png",
+                        "images/s-nicola-di-bari-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Trani",
+                    "images": [
+                        "images/cattedrale-di-trani-1.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Cefalù",
+                    "images": [
+                        "images/cattedrale-di-cefal-1.png",
+                        "images/cattedrale-di-cefal-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Monreale",
+                    "images": [
+                        "images/cattedrale-di-monreale-1.png",
+                        "images/cattedrale-di-monreale-2.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "gotico",
+            "name": "GOTICO",
+            "buildings": [
+                {
+                    "name": "St-Deni",
+                    "images": [
+                        "images/stdeni-1.png",
+                        "images/stdeni-2.png"
+                    ]
+                },
+                {
+                    "name": "Notre Dame a Parigi",
+                    "images": [
+                        "images/notre-dame-a-parigi-1.png",
+                        "images/notre-dame-a-parigi-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Noyon",
+                    "images": [
+                        "images/cattedrale-di-noyon-1.png",
+                        "images/cattedrale-di-noyon-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di  Laon",
+                    "images": [
+                        "images/cattedrale-di-laon-1.png",
+                        "images/cattedrale-di-laon-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Soisson",
+                    "images": [
+                        "images/cattedrale-di-soisson-1.png",
+                        "images/cattedrale-di-soisson-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Chartres",
+                    "images": [
+                        "images/cattedrale-di-chartres-1.png",
+                        "images/cattedrale-di-chartres-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Reims",
+                    "images": [
+                        "images/cattedrale-di-reims-1.png",
+                        "images/cattedrale-di-reims-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Amiens",
+                    "images": [
+                        "images/cattedrale-di-amiens-1.png",
+                        "images/cattedrale-di-amiens-2.png"
+                    ]
+                },
+                {
+                    "name": "Sainte-Chapelle a Parigi",
+                    "images": [
+                        "images/saintechapelle-a-parigi-1.png",
+                        "images/saintechapelle-a-parigi-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Canterbury",
+                    "images": [
+                        "images/cattedrale-di-canterbury-1.png",
+                        "images/cattedrale-di-canterbury-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Lincoln",
+                    "images": [
+                        "images/cattedrale-di-lincoln-1.png",
+                        "images/cattedrale-di-lincoln-2.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "xiiixiv-secolo-in-italia",
+            "name": "XIII-XIV SECOLO IN ITALIA",
+            "buildings": [
+                {
+                    "name": "Castel del Monte",
+                    "images": [
+                        "images/castel-del-monte-1.png",
+                        "images/castel-del-monte-2.png"
+                    ]
+                },
+                {
+                    "name": "San Francesco in Assisi",
+                    "images": [
+                        "images/san-francesco-in-assisi-1.png",
+                        "images/san-francesco-in-assisi-2.png"
+                    ]
+                },
+                {
+                    "name": "San Fortunato a Todi",
+                    "images": [
+                        "images/san-fortunato-a-todi-1.png",
+                        "images/san-fortunato-a-todi-2.png"
+                    ]
+                },
+                {
+                    "name": "Santa Maria Sopra Minerva a Roma",
+                    "images": [
+                        "images/santa-maria-sopra-minerva-a-roma-1.png",
+                        "images/santa-maria-sopra-minerva-a-roma-2.png"
+                    ]
+                },
+                {
+                    "name": "S. Maria Novella",
+                    "images": [
+                        "images/s-maria-novella-1.png",
+                        "images/s-maria-novella-2.png"
+                    ]
+                },
+                {
+                    "name": "S. Croce a Firenze",
+                    "images": [
+                        "images/s-croce-a-firenze-1.png",
+                        "images/s-croce-a-firenze-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Siena",
+                    "images": [
+                        "images/cattedrale-di-siena-1.png",
+                        "images/cattedrale-di-siena-2.png"
+                    ]
+                },
+                {
+                    "name": "Cattedrale di Orvieto",
+                    "images": [
+                        "images/cattedrale-di-orvieto-1.png",
+                        "images/cattedrale-di-orvieto-2.png"
+                    ]
+                },
+                {
+                    "name": "Santa Maria del Fiore a Firenze",
+                    "images": [
+                        "images/santa-maria-del-fiore-a-firenze-1.png",
+                        "images/santa-maria-del-fiore-a-firenze-2.png"
+                    ]
+                },
+                {
+                    "name": "Duomo di Milano",
+                    "images": [
+                        "images/duomo-di-milano-1.png",
+                        "images/duomo-di-milano-2.png"
+                    ]
+                },
+                {
+                    "name": "Palazzo pubblico a Siena",
+                    "images": [
+                        "images/palazzo-pubblico-a-siena-1.png",
+                        "images/palazzo-pubblico-a-siena-2.png"
+                    ]
+                },
+                {
+                    "name": "Palazzo Vecchio a Firenze",
+                    "images": [
+                        "images/palazzo-vecchio-a-firenze-1.png",
+                        "images/palazzo-vecchio-a-firenze-2.png"
+                    ]
+                }
+            ]
+        }
+    ]
+}
